@@ -62,7 +62,7 @@ def distance():
         EchoPulseLength = StopTime - StartTime
         return (EchoPulseLength * 34300) / 2        # Divide by 2 because we are calculating based on a reflection, so the travel time there and back
     else:
-        return = -1
+        return -1
         
 # --- End of the ultrasound sensor helper function ---
 
