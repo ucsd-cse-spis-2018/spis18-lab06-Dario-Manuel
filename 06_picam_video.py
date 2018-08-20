@@ -46,9 +46,10 @@ if __name__ == '__main__':
 
             # Make a copy of the image
             img_np1 = img_np.copy()
-
-            # Modify the copy of the image 
             img_np1.setflags(write=1)                                   # Making the array mutable                                                                                                      
+
+            # Modify the copy of the image
+            # This is where you would write your code to manipulate the image (invert it, make it grayscale, etc.)
             w,h,d = img_np1.shape
             img_np1[w//4:3*w//4 , h//4:3*h//4 , :] = 255 - img_np1[w//4:3*w//4 , h//4:3*h//4 , :]
 
